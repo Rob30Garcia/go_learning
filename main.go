@@ -189,6 +189,26 @@ func main() {
 
 	fmt.Printf("a_make\t%v\n", a_make)
 	fmt.Printf("b_make\t%v\n", b_make)
+	fmt.Println()
+
+	// Create an empty map
+	var a_empty = make(map[string]string)
+	var b_empty map[string]string
+
+	fmt.Println(a_empty == nil)
+	fmt.Println(b_empty == nil)
+	fmt.Println()
+
+	// update and add map elements
+	a_empty["brand"] = "Ford"
+	a_empty["model"] = "Mustang"
+	a_empty["year"] = "1964"
+
+	fmt.Println(a_empty)
+	a_empty["year"] = "1970" // updating an element
+	a_empty["color"] = "red" // adding an element
+
+	fmt.Println(a_empty)
 }
 
 func print_person(person Person) {
