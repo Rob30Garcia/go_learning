@@ -243,8 +243,16 @@ func main() {
 
 	a_iterate := map[string]int{"one": 1, "two": 2, "three": 3, "four": 4}
 
-	for k, v := range a_iterate {
+	var b_iterate []string // defining the order
+	b_iterate = append(b_iterate, "one", "two", "three", "four")
+
+	for k, v := range a_iterate { // loop with no order
 		fmt.Printf("%v : %v, ", k, v)
+	}
+	fmt.Println()
+
+	for _, element := range b_iterate { // loop with the defined order
+		fmt.Printf("%v : %v, ", element, a_iterate[element])
 	}
 	fmt.Println()
 }
