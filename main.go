@@ -6,6 +6,13 @@ import (
 	"rsc.io/quote"
 )
 
+type Person struct {
+	name   string
+	age    int
+	job    string
+	salary int
+}
+
 func main() {
 	fmt.Println(quote.Go())
 	fmt.Println()
@@ -118,4 +125,37 @@ func main() {
 	default:
 		fmt.Println("Invalid day of day number")
 	}
+
+	fmt.Println()
+	fmt.Println()
+
+	// Access Struct Members
+	fmt.Println("Access Struct Members")
+	var person_one Person
+	var person_two Person
+
+	// person_one specification
+	person_one.name = "Hege"
+	person_one.age = 45
+	person_one.job = "Teacher"
+	person_one.salary = 6000
+
+	// person_two specification
+	person_two.name = "Cecilie"
+	person_two.age = 24
+	person_two.job = "Marketing"
+	person_two.salary = 4500
+
+	// Access and print person_one info
+	fmt.Println("Name: ", person_one.name)
+	fmt.Println("Age: ", person_one.age)
+	fmt.Println("Job: ", person_one.job)
+	fmt.Println("Salary: ", person_one.salary)
+	fmt.Println()
+
+	// Access and print person_two info
+	fmt.Println("Name: ", person_two.name)
+	fmt.Println("Age: ", person_two.age)
+	fmt.Println("Job: ", person_two.job)
+	fmt.Println("Salary: ", person_two.salary)
 }
