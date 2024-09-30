@@ -239,6 +239,14 @@ func main() {
 	fmt.Println("After change to b:")
 	fmt.Println(a_check)
 	fmt.Println(b_check)
+	fmt.Println()
+
+	a_iterate := map[string]int{"one": 1, "two": 2, "three": 3, "four": 4}
+
+	for k, v := range a_iterate {
+		fmt.Printf("%v : %v, ", k, v)
+	}
+	fmt.Println()
 }
 
 func print_person(person Person) {
