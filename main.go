@@ -164,6 +164,16 @@ func main() {
 	fmt.Println("Pass struct as Function Arguments")
 	print_person(person_one)
 	print_person(person_two)
+
+	fmt.Println()
+
+	// go maps
+	var a = map[string]string{"brand": "Ford", "model": "Mustang", "year": "1964"}
+	b := map[string]int{"Oslo": 1, "Bergen": 2, "Trondheim": 3, "Stavanger": 4}
+
+	fmt.Printf("a\t%v\n", a)
+	fmt.Printf("b\t%v\n", b)
+
 }
 
 func print_person(person Person) {
