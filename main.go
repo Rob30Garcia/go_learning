@@ -209,6 +209,10 @@ func main() {
 	a_empty["color"] = "red" // adding an element
 
 	fmt.Println(a_empty)
+
+	delete(a_empty, "year")
+
+	fmt.Println(a_empty)
 }
 
 func print_person(person Person) {
