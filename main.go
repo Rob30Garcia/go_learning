@@ -173,7 +173,22 @@ func main() {
 
 	fmt.Printf("a\t%v\n", a)
 	fmt.Printf("b\t%v\n", b)
+	fmt.Println()
 
+	// Create Maps Using make() function:
+	var a_make = make(map[string]string) // The map is empty now
+	a_make["brand"] = "Ford"
+	a_make["model"] = "Mustang"
+	a_make["year"] = "1964"
+
+	b_make := make(map[string]int)
+	b_make["Oslo"] = 1
+	b_make["Bergen"] = 2
+	b_make["Trondheim"] = 3
+	b_make["Stavanger"] = 4
+
+	fmt.Printf("a_make\t%v\n", a_make)
+	fmt.Printf("b_make\t%v\n", b_make)
 }
 
 func print_person(person Person) {
