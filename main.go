@@ -227,6 +227,18 @@ func main() {
 	fmt.Println(val2, ok2)
 	fmt.Println(val3, ok3)
 	fmt.Println(ok4)
+	fmt.Println()
+
+	b_check := a_check
+
+	fmt.Println(a_check)
+	fmt.Println(b_check)
+	fmt.Println()
+
+	b_check["year"] = "1970"
+	fmt.Println("After change to b:")
+	fmt.Println(a_check)
+	fmt.Println(b_check)
 }
 
 func print_person(person Person) {
