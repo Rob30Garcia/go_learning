@@ -213,6 +213,20 @@ func main() {
 	delete(a_empty, "year")
 
 	fmt.Println(a_empty)
+	fmt.Println()
+
+	// Check for specific elements in a map
+	var a_check = map[string]string{"brand": "Ford", "model": "Mustang", "year": "1964", "day": ""}
+
+	val1, ok1 := a_check["brand"] // checking for existing key and its value
+	val2, ok2 := a_check["color"] // checking for non-existing key and its value
+	val3, ok3 := a_check["day"]   // checking for existing key and its value
+	_, ok4 := a_check["model"]    // only checking for existing key and not its value
+
+	fmt.Println(val1, ok1)
+	fmt.Println(val2, ok2)
+	fmt.Println(val3, ok3)
+	fmt.Println(ok4)
 }
 
 func print_person(person Person) {
