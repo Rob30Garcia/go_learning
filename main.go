@@ -158,4 +158,18 @@ func main() {
 	fmt.Println("Age: ", person_two.age)
 	fmt.Println("Job: ", person_two.job)
 	fmt.Println("Salary: ", person_two.salary)
+	fmt.Println()
+
+	// Pass struct as Function Arguments
+	fmt.Println("Pass struct as Function Arguments")
+	print_person(person_one)
+	print_person(person_two)
+}
+
+func print_person(person Person) {
+	fmt.Println("Name: ", person.name)
+	fmt.Println("Age: ", person.age)
+	fmt.Println("Job: ", person.job)
+	fmt.Println("Salary: ", person.salary)
+	fmt.Println()
 }
